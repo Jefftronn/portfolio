@@ -371,7 +371,7 @@ html, body {
 .contactContainer {
   position: relative;
   padding-top: 30px;
-  height: 980px;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(https://images.unsplash.com/photo-1425321395722-b1dd54a97cf3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e2e3896c650e93eb41093afb110c6059);
@@ -392,10 +392,10 @@ html, body {
   margin: 0 auto;
   text-align: center;
   position: absolute;
-  top: 100px;
-  right: 200px;
+  top: 150px;
+  right: 100px;
   height: 530px;
-  width: 400px;
+  width: 500px;
   padding: 0px 30px 30px 30px;
   border-radius: 10px;
   color: white;
