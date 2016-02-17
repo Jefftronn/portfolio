@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  font-family: "Vollkorn";
+}
+
+html, body {
+}
+
+/*HOME PAGE START*/
+
+.nav-wrapper {
+  border-bottom: thin solid white;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 200;
+  background-color: #3B3738;
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+}
+
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 90000;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  transition: 0.7s linear all;
+  line-height: 5em;
+
+}
+.loading.ng-hide {
+    opacity: 0;
+}
+.loading h3 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+}
+.loading i {
+  position: relative;
+  color: white;
+}
+
+.slides img {
+  opacity: .3;
+}
+
+.slides div {
+  margin-top: 15%;
+  text-shadow: 2px 2px #3B3738;
+}
+
+/*HOME PAGE END*/
+
+/*PROFILE PAGE START*/
+
+
+.profilePic {
+  width: 227px;
+  height: 228px;
+  background-image: url('http://i.imgur.com/WBBWpr0.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.profileIcon {
+  width: 90px;
+  height: 90px;
+  background-color: #C63D0F;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 4px;
+  color: white;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.profileText {
+  width: 70%;
+  text-align: left;
+  float: right;
+  position: relative;
+  font-size: 19px;
+  padding-left: 30px;
+}
+
+.proContain {
+  position: relative;
+  display: flex;
+  color: #3B3738;
+}
+
+.profileContainer {
+  z-index: 10;
+}
+
+.section {
+  background-color: #FDF3E7;
+}
+
+/*PROFILE PAGE END*/
+
+/*SKILLS PAGE START*/
+
+.skillsContainer {
+  background-image: url(https://images.unsplash.com/photo-1416339158484-9637228cc908?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f8d10c7428a6233b83dee9250d8a9b8c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+.skillsIcon {
+  width: 90px;
+  height: 90px;
+  background-color: #C63D0F;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 15px;
+  color: white;
+  margin: 0 auto;
+}
+
+.headerSkills {
+  color: white;
+  text-shadow: 3px 3px #3B3738;
+}
+
+.p3Content {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height:60vh;
+  top: 2vh;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+.p3Desc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 7%;
+  width: 100%;
+}
+
+.p3Desc h5 {
+  position: relative;
+  top: 3vh;
+  text-align: center;
+  font-size: 1.2em;
+  color: rgb(178, 178, 180);
+
+}
+.p3Skills {
+  position: relative;
+  top: 1vh;
+  display: flex;
+  /*border: 5px solid blue;*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 75%;
+  width: 80%;
+}
+.skillsChar{
+  position: relative;
+  display: flex;
+  width: 20%;
+  height: 25vh;
+  border: 2px solid white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(111, 116, 117);
+  border-radius: 1px;
+  letter-spacing: 0.5px;
+  text-shadow: black 0.5px 0.5px 0.5px;
+}
+.skillsChar:hover {
+  font-size: 0;
+}
+.skillsChar:hover {
+  background: white;
+  border: 3px solid white;
+  transition-property: background;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-out;
+  z-index: 10;
+}
+#htmlsk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/ekpKia9.png");
+  word-wrap: break-word;
+}
+#csssk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://materializecss.com/images/favicon/apple-touch-icon-152x152.png");
+  word-wrap: break-word;
+}
+#jssk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/48z5MjO.png");
+  word-wrap: break-word;
+}
+#jquerysk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/1O1gsS1.png");
+  word-wrap: break-word;
+}
+#angularsk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/SVcH1GT.png");
+  word-wrap: break-word;
+}
+#gitsk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/WLAHQrm.png");
+  word-wrap: break-word;
+}
+#firebasesk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/fEdxLrR.png");
+  word-wrap: break-word;
+}
+#mongosk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/IIuryKx.png");
+  word-wrap: break-word;
+}
+#nodesk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/DIw0IL8.png");
+  word-wrap: break-word;
+}
+#reactsk:hover:after {
+  /*content: attr(data-skl-alt);*/
+  content: url("http://i.imgur.com/NAPMtp7.png");
+  word-wrap: break-word;
+}
+
+.headerSkills {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/*SKILLS PAGE END*/
+
+
+/*PORTFOLIO PAGE START*/
+
+.portfolioContainer {
+  background-color: #FDF3E7;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.portfolioIcon {
+  width: 90px;
+  height: 90px;
+  background-color: #C63D0F;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 15px;
+  color: white;
+  margin: 0 auto;
+}
+
+.portfolioProjects {
+}
+
+.noLiveServer {
+  width: 800px;
+  height: 400px;
+  background-image: url(http://i.imgur.com/JOoGWN2.png);
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.personalProject {
+  width: 800px;
+  height: 400px;
+  background-image: url(http://i.imgur.com/GhFzCBC.png);
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.groupProject {
+
+}
+
+/*PORTFOLIO PAGE END*/
+
+/*RESUME PAGE START*/
+
+.resumeContainer {
+  padding-top: 30px;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1429032021766-c6a53949594f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300);
+}
+
+.resumeIcon {
+  width: 90px;
+  height: 90px;
+  background-color: #C63D0F;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 15px;
+  color: white;
+  margin: 0 auto;
+}
+
+.headerResume {
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: 2px 2px #3B3738;
+}
+
+.resumeContent {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-size: 35px;
+  text-shadow: 2px 2px #3B3738;
+  cursor: pointer;
+}
+
+.resumeContent a {
+  color: white;
+
+}
+
+.resIcons {
+  width: 400px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resumeIcons div {
+  display: inline-block;
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.resumeIcons a {
+  color: white;
+  text-shadow: 2px 2px #3B3738;
+}
+
+/*RESUME PAGE END*/
+
+/*CONTACT PAGE START*/
+
+.contactContainer {
+  position: relative;
+  padding-top: 30px;
+  height: 980px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1425321395722-b1dd54a97cf3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e2e3896c650e93eb41093afb110c6059);
+}
+
+.headerContact {
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: 2px 2px #3B3738;
+}
+
+#foxyform_embed_link_750913 {
+  text-align: center;
+}
+
+.mailer {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  height: 530px;
+  width: 400px;
+  padding: 0px 30px 30px 30px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 2px 2px #3B3738;
+}
+
+.icons {
+  margin-top: 125px;
+  position: absolute;
+  left: 200px;
+  width: 400px;
+  color: white;
+}
+
+.icons p {
+  color: white;
+  font-size: 35px;
+  text-shadow: 2px 2px #3B3738;
+}
+
+.contactIcons div {
+  padding-right: 70px;
+  display: inline-block;
+  padding-top: 20px;
+  text-shadow: 2px 2px #3B3738;
+}
+
+.contactIcons a {
+  color: white;
+}
+
+.mailer p {
+  font-size: 17px;
+}
+
+/*CONTACT PAGE END*/
